@@ -11,7 +11,7 @@ public float cutoff = 300;
 public boolean update = false;
 public boolean printCoordinates = true;
 public boolean showInput = false;
-public boolean rectangular = true;
+//public boolean rectangular = true;
 
 public ArrayList<Complex> complexNumbers;
 
@@ -186,6 +186,7 @@ Complex divComplex(Complex z1, Complex z2) {
 //derived by changing (re^iθ)^(a+bi) into two new complex numbers being multiplied,
 //which are (r^a)(e^(bi*ln(r))) and (e^iaθ)/(e^bθ)
 //so proud of this derivation!!
+//this derivation is wrong. only for solely imaginary exponents D:
 Complex powImaginaryComplex(Complex z, Complex exp) {
   //Complex temp1 = new Complex(pow(z.radius, exp.real), exp.imaginary * log(z.radius), false);
   //Complex temp2 = new Complex(exp(-exp.imaginary * z.theta), exp.real * z.theta, false);
@@ -325,7 +326,7 @@ void keyPressed() {
   }
   
   if(key == 'z')
-    rectangular = !rectangular;
+    Complex.rectangular = !Complex.rectangular;
     
     /*
     println(input);

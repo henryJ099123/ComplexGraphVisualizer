@@ -4,8 +4,10 @@ public class Complex {
   public float radius;
   public float theta;
   public color fillColor = color(0, 0, 255);
+  
   public final static int minSize = 5;
   public final static int maxSize = 15;
+
   //color(int(random(0, 256)), int(random(0, 256)), int(random(0, 256)));
   
   public Complex(float a, float b, boolean check) {
@@ -92,7 +94,7 @@ public class Complex {
   }
   
   public String toString() {
-    if(rectangular)
+    if(Complex.rectangular)
       return real + " + " + imaginary + "i";
     else
       return radius + "e^(" + theta + "i)";
