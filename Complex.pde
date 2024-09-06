@@ -94,10 +94,10 @@ public class Complex {
   }
   
   public String toString() {
-    if(Complex.rectangular)
+    //if(Complex.rectangular)
       return real + " + " + imaginary + "i";
-    else
-      return radius + "e^(" + theta + "i)";
+    //else
+    //  return radius + "e^(" + theta + "i)";
   }
 
 }

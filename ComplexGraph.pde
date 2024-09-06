@@ -325,8 +325,8 @@ void keyPressed() {
     showInput = !showInput;
   }
   
-  if(key == 'z')
-    Complex.rectangular = !Complex.rectangular;
+  //if(key == 'z')
+  //  Complex.rectangular = !Complex.rectangular;
     
     /*
     println(input);
